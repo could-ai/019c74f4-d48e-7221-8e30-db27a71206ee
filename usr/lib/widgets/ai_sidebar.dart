@@ -64,7 +64,7 @@ class _AiSidebarState extends State<AiSidebar> {
                   shape: BoxShape.circle,
                 ),
                 child: Icon(Icons.auto_awesome, color: Theme.of(context).colorScheme.primary, size: 20),
-              ).animate(onPlay: (controller) => controller.repeat(reverse: true)).pulse(duration: 2000.ms),
+              ).animate(onPlay: (controller) => controller.repeat(reverse: true)).scaleXY(begin: 1.0, end: 1.1, duration: 1000.ms),
               const SizedBox(width: 12),
               const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
